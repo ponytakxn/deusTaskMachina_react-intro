@@ -1,0 +1,53 @@
+.container-add {
+    display: flex;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.add-task {
+    position: relative;
+    top: 12px; 
+    right: 20px;
+    height: 40px;
+    width: 300px;
+    border-radius: 12px;
+    border: 1px solid #321e4576;
+    text-align: center;
+    font-family: 'Mukta';
+    background-color: #2091d825;
+    color: #88366b;
+}
+
+.add-task:focus {
+    outline-offset: 1px;
+    outline: thin dotted;
+    outline-color: #88366b3a;
+    outline-width: 3px;
+}
+
+.CreateTodoButton {
+    background-color: #88366b;
+    box-shadow: 0px 5px 25px rgba(194, 97, 250, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 50px;
+    /* position: fixed;
+    bottom: 24px;
+    right: 24px; */
+    font-weight: bold;
+    color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 64px;
+  
+    transform: rotate(0);
+    transition: .3s ease;
+  }
+  
+  .CreateTodoButton:hover {
+    transform: rotate(224deg);
+  }

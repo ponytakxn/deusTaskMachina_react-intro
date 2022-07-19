@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f8efed;
+  color: #321e45;
+  font-family: 'Mukta', sans-serif;;
+}
+
+#root {
+  margin: 0 24px;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+ */
