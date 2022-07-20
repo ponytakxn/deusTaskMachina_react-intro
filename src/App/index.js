@@ -10,7 +10,20 @@ import AppUI from './AppUI';
 
 
 /*SETEAMOS NUESTRO CUSTOM HOOK PARA USARLO EN LOS CAMBIOS AL LOCAL STORAGE*/
-function useLocalStorage(itemName, initialValue) {
+function useLocalStorage(key, initialValue) {
+  const [storedValue, setStoredValue] = React.useState(() => {
+    const localStorageItem = localStorage.getItem(key);
+    return localStorageItem ? JSON.parse(localStorageItem) : initialValue;
+  })
+
+  const saveItem = (newItem) => {
+    localStorage.setItem(key, JSON.stringify(newItem));
+    setStoredValue(newItem);
+  }
+
+  return [storedValue, saveItem]
+}
+/* function useLocalStorage(itemName, initialValue) {
   const localStorageItem = localStorage.getItem(itemName);
   let parsedItem;
 
@@ -33,7 +46,7 @@ function useLocalStorage(itemName, initialValue) {
     item,
     saveItem,
   ];
-}
+} */
 
 function App() {
 /*SETEAMOS LOS ESTADOS PARA LA LISTA Y LA BARRA DE BÚSQUEDA*/
@@ -73,7 +86,7 @@ function App() {
   }
 
   /*FUNCIÓN PARA AGREGAR TAREAS A LA LISTA*/
-
+  
 
   return (
     <AppUI
@@ -84,6 +97,7 @@ function App() {
       searchValue={searchValue}
       setSearchValue={setSearchValue}
       searchedTodos={searchedTodos}
+      
     />
   );
 }

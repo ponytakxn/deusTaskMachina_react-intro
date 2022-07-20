@@ -7,10 +7,11 @@ function CreateTodoButton(){
         <div className='container-add'>
             <input 
                 className='add-task'
-                placeholder='Add new task'   
+                placeholder='Add new task'
             />
             <button 
                 className='CreateTodoButton'
+                
             >
                 +
             </button>
