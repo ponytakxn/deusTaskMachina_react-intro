@@ -12,7 +12,7 @@ function AppUI({
     deleteTodo,
     searchValue,
     setSearchValue,
-    searchedTodos
+    searchedTodos,
 }) {
     return (
         <React.Fragment>
@@ -39,7 +39,8 @@ function AppUI({
             )}
           </TodoList>}
     
-          {<CreateTodoButton />}
+          {<CreateTodoButton
+          />}
           
         </React.Fragment>
       );
