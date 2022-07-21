@@ -13,6 +13,8 @@ function TodoProvider(props) {
     } = useLocalStorage('TODOS_V1', []);
     const [searchValue, setSearchValue] = React.useState('');
     const [addTask, setAddTask] = React.useState('');
+    const [editTask, setEditTask] = React.useState('');
+    const [openModal, setOpenModal] = React.useState(false);
         
     /*SETEAMOS LAS VARIABLES QUE NOS PERMITIRÁN SABER CUÁNTA TASK LLEVAMOS REALIZADAS*/
     const completedTodos = todos.filter(todo => todo.completed).length;   // todo.completed por defecto será true, también !!todo.completed serviría
@@ -48,16 +50,17 @@ function TodoProvider(props) {
 
     /*FUNCIÓN PARA AGREGAR TAREAS A LA LISTA*/
     const addNewTask = () => {
-        if (addTask.length >= 1) {
-            let newTask = {text: addTask, completed: false};
-            const newTodos = [...todos, newTask];
-            saveTodos(newTodos)
-        } else {
-            const newTodos = [...todos];
-            saveTodos(newTodos);
-        }
+        let newTodos = [...todos];
+        addTask ? newTodos.push({
+            text: addTask,
+            completed: false
+        }) : newTodos = [...todos];
+
+        saveTodos(newTodos);
     }
 
+    /*FUNCIÓN PARA EDITAR ALGUNA TAREA DE LA LISTA*/
+    
 
     return (
         <TodoContext.Provider value={{
@@ -73,6 +76,10 @@ function TodoProvider(props) {
             addNewTask,
             addTask,
             setAddTask,
+            editTask,
+            setEditTask,
+            openModal,
+            setOpenModal,
         }}>
             {props.children}
         </TodoContext.Provider>

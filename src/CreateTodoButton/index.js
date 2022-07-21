@@ -6,7 +6,6 @@ function CreateTodoButton(){
     const { addTask, setAddTask, addNewTask } = React.useContext(TodoContext);
     
     const onAddValueChange = (event) => {
-        console.log(event.target.value);
         setAddTask(event.target.value);
     }
 
