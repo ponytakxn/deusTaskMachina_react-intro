@@ -13,7 +13,6 @@ function TodoProvider(props) {
     } = useLocalStorage('TODOS_V1', []);
     const [searchValue, setSearchValue] = React.useState('');
     const [addTask, setAddTask] = React.useState('');
-    const [editTask, setEditTask] = React.useState('');
     const [openModal, setOpenModal] = React.useState(false);
         
     /*SETEAMOS LAS VARIABLES QUE NOS PERMITIRÁN SABER CUÁNTA TASK LLEVAMOS REALIZADAS*/
@@ -76,8 +75,6 @@ function TodoProvider(props) {
             addNewTask,
             addTask,
             setAddTask,
-            editTask,
-            setEditTask,
             openModal,
             setOpenModal,
         }}>

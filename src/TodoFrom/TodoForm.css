@@ -1,0 +1,70 @@
+form {
+    width: 80%;
+    height: 300px;
+    background-color: #d4d7ed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 3px solid #321e45;
+}
+
+label {
+    position: relative;
+    bottom: 30px;
+    font-size: 1.7em;
+}
+
+textarea {
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #321e45;
+    width: 60%;
+    height: 80px;
+    bottom: 10px;
+    padding: 10px;
+    font-size: 1.1em;
+    font-family: 'Mukta';
+    color: #88366b;
+    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
+    resize: none;
+}
+
+textarea::placeholder{
+    color: #88366b;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.addnew-button {
+    position: relative;
+    top: 20px;
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+    font-family: 'Mukta';
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 8px;
+    font-size: 1.05em;
+}
+
+.cancel-button {
+    background-color: #321e4531;
+    color: rgba(33, 33, 33, 0.785);
+}
+
+.accept-button{ 
+    background-color: #df9bc7;
+    color: #321e45;
+}
+

@@ -3,7 +3,12 @@ import { TodoContext } from '../TodoContext';
 import './CreateTodoButton.css';
 
 function CreateTodoButton(){
-    const { addTask, setAddTask, addNewTask } = React.useContext(TodoContext);
+    const { 
+        addTask, 
+        setAddTask, 
+        addNewTask,
+        setOpenModal,
+    } = React.useContext(TodoContext);
     
     const onAddValueChange = (event) => {
         setAddTask(event.target.value);
@@ -18,8 +23,15 @@ function CreateTodoButton(){
                 placeholder='Add new task'
             />
             <button 
-                className='CreateTodoButton'
+                className='CreateTodoButton Button-desktop'
                 onClick={addNewTask}
+            >
+                +
+            </button>
+
+            <button 
+                className='CreateTodoButton Button-mobile'
+                onClick={setOpenModal}
             >
                 +
             </button>

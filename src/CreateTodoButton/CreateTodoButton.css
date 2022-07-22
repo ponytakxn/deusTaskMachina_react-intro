@@ -43,11 +43,31 @@
     align-items: center;
     height: 64px;
     width: 64px;
-  
+
     transform: rotate(0);
     transition: .3s ease;
-  }
-  
-  .CreateTodoButton:hover {
+}
+
+.CreateTodoButton:hover {
     transform: rotate(224deg);
-  }
+}
+
+.Button-mobile {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .Button-desktop {
+        display: none;
+    }
+    .add-task {
+        display: none;
+    }
+
+    .Button-mobile {
+        display: flex;
+        position: fixed;
+        left: 50%;
+        bottom: 10px;
+    }
+}

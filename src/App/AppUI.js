@@ -18,7 +18,6 @@ function AppUI() {
     deleteTodo,
     openModal,
     setOpenModal,
-    editNewTask,
   } = React.useContext(TodoContext);
   
   return (
@@ -46,7 +45,9 @@ function AppUI() {
       
       {openModal && (
         <Modal>
-          <TodoForm />
+          <TodoForm 
+
+          />
         </Modal>
       )}
 
