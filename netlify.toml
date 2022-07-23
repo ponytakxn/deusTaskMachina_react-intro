@@ -1,3 +1,3 @@
-[building]
-    publish = "dist"
-    command = "npm run building"
+[build]
+    publish = "static"
+    command = "npm run build"

@@ -1,5 +1,4 @@
 import React from 'react';
-import { TodoContext } from '../TodoContext';
 import './TodoItem.css';
 import { TiTick } from 'react-icons/ti';
 import { BsBookmarkXFill } from 'react-icons/bs';
