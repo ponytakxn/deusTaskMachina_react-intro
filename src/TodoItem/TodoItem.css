@@ -44,10 +44,6 @@
     /* background-color: #CCC; */
 }
 
-.Icon-edit {
-    
-}
-
 .Icon-check {
     position: absolute;
     left: 12px;
@@ -72,4 +68,30 @@
 
 .Icon-delete:hover {
     color: #88366b;
+}
+
+@media (max-width: 480px) {
+    .container-item {
+        width: 360px;
+        margin: 0 auto;
+    }
+
+    .TodoItem {
+        width: 90%;
+    }
+
+    .TodoItem-p {
+        width: calc(100% - 110px);
+        font-size: 1.1em;
+        margin-left: 0px;
+    }
+
+    .Icon-check {
+        transform: scale(1);
+        left: 6px;
+    }
+
+    .Icon-delete {
+        transform: scale(1.35);
+    }
 }

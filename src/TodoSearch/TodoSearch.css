@@ -34,3 +34,16 @@
     outline-width: 1.5px;
     outline-offset: 1px;
 }
+
+@media (max-width: 428px) {
+    .container {
+        width: 360px;
+    }
+
+    .TodoSearch {
+        font-size: 1.1em;
+        height: 44px;
+        margin-top: -20px;
+        margin-bottom: 8px;
+    }
+}

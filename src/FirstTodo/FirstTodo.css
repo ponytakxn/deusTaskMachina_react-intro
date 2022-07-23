@@ -29,3 +29,15 @@
 p {
     font-size: 1.1em;
 }
+
+@media (max-width: 428px) {
+    p {
+        font-size: 1em;
+    }
+
+    .first-image {
+        width: 312px;
+        height: 246px;
+    }
+
+}

@@ -67,7 +67,7 @@
     .Button-mobile {
         display: flex;
         position: fixed;
-        left: 50%;
+        left: 43%;
         bottom: 10px;
     }
 }

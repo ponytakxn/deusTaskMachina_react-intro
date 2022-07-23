@@ -5,6 +5,13 @@
     padding: 48px;
 }
 
+@media (max-width: 428px) {
+    .TodoCounter {
+        font-size: 1.1em;
+        padding: 24px;
+    }
+}
+
 
 /* .color1 {color: #321e45;}
 .color2 {color: #88366b;}
