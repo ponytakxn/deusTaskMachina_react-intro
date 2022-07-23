@@ -1,6 +1,8 @@
 .container{ 
     display: flex;
     justify-content: center;
+    width: 640px;
+    margin: 0 auto;
 }
 
 .TodoSearch {
