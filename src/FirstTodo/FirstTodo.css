@@ -1,0 +1,31 @@
+.first-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-image {
+    position: relative;
+    width: 390px;
+    height: 308px;
+}
+
+.button {
+    background-color: #88366b;
+    border: none;
+    border-radius: 50%;
+    cursor: default;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+}
+
+p {
+    font-size: 1.1em;
+}

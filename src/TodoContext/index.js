@@ -56,6 +56,7 @@ function TodoProvider(props) {
         }) : newTodos = [...todos];
 
         saveTodos(newTodos);
+        setAddTask('');
     }
 
     /*FUNCIÓN PARA EDITAR ALGUNA TAREA DE LA LISTA*/

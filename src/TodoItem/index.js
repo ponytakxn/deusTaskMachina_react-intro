@@ -1,6 +1,8 @@
 import React from 'react';
 import { TodoContext } from '../TodoContext';
 import './TodoItem.css';
+import { TiTick } from 'react-icons/ti';
+import { BsBookmarkXFill } from 'react-icons/bs';
 
 function TodoItem(props){
     return(
@@ -10,7 +12,7 @@ function TodoItem(props){
                     className={`Icon Icon-check ${props.completed && 'Icon-check--active'}`}
                     onClick={props.onComplete}
                 >
-                    ᄼ   
+                    <TiTick />   
                 </span>
                 <p className={`TodoItem-p ${props.completed && 'TodoItem-p--complete'}`} id="task-name">
                     {props.text}
@@ -19,7 +21,7 @@ function TodoItem(props){
                     className="Icon Icon-delete"
                     onClick={props.onDelete}
                 >
-                    X
+                    <BsBookmarkXFill />
                 </span>
             </li>
         </div>

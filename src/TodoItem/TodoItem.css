@@ -51,8 +51,9 @@
 .Icon-check {
     position: absolute;
     left: 12px;
-    transform: rotate(180deg);
+    top: 12px;
     margin-bottom: 20px;
+    transform: scale(1.2);
 }
 
 .Icon-check--active {
@@ -61,11 +62,12 @@
 
 .Icon-delete {
     position: absolute;
-    top: -24px;
-    right: 0;
+    top: -18px;
+    right: 0;/* 
     background-color: #321e45;
-    border-radius: 50%;
-    color: #d4d7ed;
+    border-radius: 50%; */
+    color: #321e45;
+    transform: scale(1.5);
 }
 
 .Icon-delete:hover {

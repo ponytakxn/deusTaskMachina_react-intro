@@ -7,6 +7,7 @@ import { TodoItem } from '../TodoItem/index.js';
 import { CreateTodoButton } from '../CreateTodoButton/index.js';
 import { Modal } from '../Modal/index';
 import { TodoForm } from '../TodoFrom/index.js';
+import { FirstTodo } from '../FirstTodo/index.js';
 
 function AppUI() {
   
@@ -29,7 +30,7 @@ function AppUI() {
       <TodoList>
         {loading && <p>Loading...</p>}
         {error && <p>Ups, an error has ocurred...</p>}
-        {(!loading && !searchedTodos.length) && <p>Create your first task!</p>}
+        {(!loading && !searchedTodos.length) && <FirstTodo />}
         {searchedTodos.map(todo => (
           <TodoItem 
             
